@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="fullbody">
+        <!-- <div id="fullcalc"> -->
+            <!-- <div id="displayOut"> -->
+                <div id="displayIn">
+                    <input readonly id="display" type="text" placeholder="0">
+                </div>
+            <!-- </div> -->
+            <!-- <div id="buttonOut"> -->
+                <div id="buttonIn">
+                    <div class="row" id="row1">
+                        <button class="button" id="bAC" onclick="displayclear()">AC</button>
+                        <button class="button" id="btheme" onclick="theme()">Mode</button>
+                        <button class="button" id="bdel" onclick="del()">DEL</button>
+                    </div>
+                    <div class="row" id="row2">
+                        <button class="button" id="b1" onclick="innertext('1')">1</button>
+                        <button class="button" id="b2" onclick="innertext('2')">2</button>
+                        <button class="button" id="b3" onclick="innertext('3')">3</button>
+                        <button class="button" id="bplus" onclick="innertext('+')">+</button>
+                    </div>
+                    <div class="row" id="row3">
+                        <button class="button" id="b4" onclick="innertext('4')">4</button>
+                        <button class="button" id="b5" onclick="innertext('5')">5</button>
+                        <button class="button" id="b6" onclick="innertext('6')">6</button>
+                        <button class="button" id="bminus" onclick="innertext('-')">-</button>
+                    </div>
+                    <div class="row" id="row4">
+                        <button class="button" id="b7" onclick="innertext('7')">7</button>
+                        <button class="button" id="b8"onclick="innertext('8')">8</button>
+                        <button class="button" id="b9" onclick="innertext('9')">9</button>
+                        <button class="button" id="bmul" onclick="innertext('*')">x</button>
+                    </div>
+                    <div class="row" id="row5">
+                        <button class="button" id="b0" onclick="innertext('0')">0</button>
+                        <button class="button" id="b." onclick="innertext('.')">.</button>
+                        <button class="button" id="bequal"onclick="calculation()">=</button>
+                        <button class="button" id="bdiv"onclick="innertext('/')">/</button>
+                    </div>
+                </div>
+            <!-- </div> -->
+        <!-- </div> -->
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
